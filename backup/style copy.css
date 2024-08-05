@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Poetsen+One&family=Sedan+SC&display=swap');
+
+:root{
+    --cabeçalhoCor: #D2D2D2;
+    --linearFundo: #737373;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inika", sans-serif;
+}
+
+.cabeçalho{
+    display: flex;
+    background-image: url(imagem/cabeçalho.png);
+    border: solid 5px black;
+
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo{
+    left: 100%;
+    padding-right: 20%;
+    height: 100%;
+
+}
+
+.centro{
+    background-image: url(imagem/background.png);
+}
+
+.botoes{
+    text-align: center;
+    height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.botao{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 300ms;
+}
+
+.botao:hover{
+    background-color: #73737310;
+    border-radius: 10px;
+}
+
+.botao.ativo{
+    background-color: #73737310;
+    border-radius: 10px;
+}
+
+.conteudo{
+    display: none;
+
+}
+
+.conteudo.ativo{
+    display: block;
+    
+}
+
+.forms{
+    align-items: center;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.formstext{
+    font-size: 24px;
+}
+
+.formRenda{
+    width: 300px;
+    height: 24px;
+    font-size: 17px;
+    size: 17px;
+}
+
+.enviar{
+    width: 70px;
+    height: 24px;
+    font-size: 15px;
+    font-weight: 600;
+}

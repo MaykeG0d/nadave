@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonegue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header class="cabeçalho">
+    <img class="logo" src="imagem/proerd.png" alt="">
+    <h1 class="titulo">Simulador de Imposto de Renda</h1>
+
+
+</header>
+<body class="centro">
+<div class="botoes">
+
+    <!-- Botão Mensal -->
+    <div class="mensal">
+       <button class="botao ativo Mensal">Mensal</button>
+        
+    </div>
+
+    <!-- Botão Anual -->
+    <div class="anual">
+        <button class="botao Anual">Anual</button>
+
+    </div>
+</div>
+
+<div class="forms">
+<!-- Pesquisa Mensal -->
+<div class="conteudo ativo">
+    <h1 class="formstext">Qual sua renda(mensal)?</h1>
+    <input class="formRenda" id="inputValueM" type="number" placeholder="Digite um valor...">
+    <button class="enviar" onclick="multiplicarMensal()" id="mensalEnviar" type="button">Enviar</button>
+    <p class="resultado" id="resultadoM"></p>
+</div>
+
+<!-- Pesquisa Anual -->
+<div class="conteudo">   
+    <h1 class="formstext">Qual sua renda(anual)?</h1>
+    <input class="formRenda" id="inputValueA" type="number" placeholder="Digite um valor...">
+    <button class="enviar" onclick="multiplicarAnual()" id="anualEnviar" type="submit">Enviar</button>
+    <p class="resultado" id="resultadoA"></p>
+</div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
